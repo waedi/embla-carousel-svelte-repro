@@ -11,7 +11,11 @@
   }
 </script>
 
-<div class="embla" use:emblaCarouselSvelte={{ options }} onemblaInit={onInit}>
+<div
+  class="embla"
+  use:emblaCarouselSvelte={{ options, plugins: [] }}
+  onemblaInit={onInit}
+>
   <div class="embla__container">
     <div class="embla__slide">Slide 1</div>
     <div class="embla__slide">Slide 2</div>
